@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\uCOS-III\uC-CPU\ARM-Cortex-M4\RealView -I ..\uCOS-III\uC-CPU -I ..\uCOS-III\uC-LIB\Ports -I ..\uCOS-III\uC-LIB -I ..\uCOS-III\UCOS-BSP -I ..\uCOS-III\UCOS-CONFIG -I ..\uCOS-III\uCOS-III\Source -I ..\uCOS-III\uCOS-III\Ports -I ..\uCOS-III\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView -I ..\uCOS-III\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView -I ..\BSP
+-I.\RTE\_LED
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.3.0\CMSIS\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-D__UVISION_VERSION="525" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx
+-o led\lib_str.o --omf_browse led\lib_str.crf --depend led\lib_str.d --feedback "LED\LED.fed" "..\uCOS-III\uC-LIB\lib_str.c"
